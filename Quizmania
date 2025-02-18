@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier-Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1em;
+        }
+        main {
+            padding: 20px;
+        }
+        .quiz-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .quiz-category {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showQuestion(category) {
+            alert('Hier kommt eine Frage zu ' + category);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Tier-Quiz</h1>
+    </header>
+    <main>
+        <h2>Wähle eine Kategorie:</h2>
+        <div class="quiz-container">
+            <div class="quiz-category">
+                <h3>Afrikanische Tiere</h3>
+                <button onclick="showQuestion('Afrikanische Tiere')">Quiz starten</button>
+            </div>
+            <div class="quiz-category">
+                <h3>Amerikanische Tiere</h3>
+                <button onclick="showQuestion('Amerikanische Tiere')">Quiz starten</button>
+            </div>
+            <div class="quiz-category">
+                <h3>Meerestiere</h3>
+                <button onclick="showQuestion('Meerestiere')">Quiz starten</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tier-Quiz</p>
+    </footer>
+</body>
+</html>
